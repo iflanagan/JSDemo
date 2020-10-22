@@ -1,0 +1,54 @@
+<html>
+<head>
+
+<!-- add RB snippet here--->
+
+
+<script>
+
+/*
+function getMessage(input) {
+  
+  alert('Hello ' +input);
+}
+*/
+
+
+function Hello() {
+
+  var input = prompt('Enter your FirstName');
+  getMessage(input);
+  
+}
+
+
+function validateDate() {
+  
+  var input = prompt('Enter your Date of Birth: mm-dd-yyyy');
+
+var myregex =/^([0-9]{2})-([0-9]{2})-([0-9]{4})$/; // && input !=== null
+
+if(myregex.test(input) && input !==="")
+{
+     alert('Valid birthdate: ' +input);
+     
+} else {
+
+  alert('Invalid birthdate: ' +input);
+  throw new Error('Invalid birthdate: ' +input)
+ 
+       }
+       
+}
+
+
+</script>
+</head>
+<!--<meta http-equiv="cache-control" content="no-cache" /> -->
+<body>
+<h1>Rollbar JavaScript Demo</h1>
+<button onclick="Hello();">FirstName</button>
+<button onclick="validateDate();">Birthdate</button>
+</body>
+</html>
+
