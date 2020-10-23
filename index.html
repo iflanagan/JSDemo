@@ -36,9 +36,16 @@ function getMessage(input) {
 */
 
 
-function Hello() {
+function FirstName() {
 
-  var input = prompt('Enter your FirstName');
+  var input = prompt('Enter your First Name');
+  getMessage(input);
+  
+}
+        
+function LastName() {
+
+  var input = prompt('Enter your Last Name');
   getMessage(input);
   
 }
@@ -63,13 +70,13 @@ if(myregex.test(input) && input !==="")
        
 }
 
-
 </script>
 </head>
 <!--<meta http-equiv="cache-control" content="no-cache" /> -->
 <body>
 <h1>Rollbar JavaScript Demo</h1>
-<button onclick="Hello();">FirstName</button>
+<button onclick="FirstName();">FirstName</button>
+<button onclick="LastName();">FirstName</button>
 <button onclick="validateDate();">Birthdate</button>
 </body>
 </html>
