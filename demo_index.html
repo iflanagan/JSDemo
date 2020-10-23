@@ -9,7 +9,6 @@
 function getMessage(name) {
   if (name == 'hello') { return 'Hello!'; }
   else if (name == 'goodbye') { return 'See ya;'; }
-  else if (name == 'good morning') { return 'Good morning!'; }
   else { 
     throw new Error('unknown message:' + name);
   }
@@ -23,11 +22,6 @@ function sayHello() {
 
 function sayGoodbye() {
   var message = getMessage('goodbye');
-  alert(message);
-}
-
-function sayGoodMorning() {
-  var message = getMessage('good morning');
   alert(message);
 }
 
