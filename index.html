@@ -1,86 +1,26 @@
 <html>
 <head>
 
-<!--Ian Flanagan Rollbar 2020 ----->
-
-<!--
-payload: {
-
-        environment: "production" 
-       // environment: "QA",
-        /*
-        person: {
-            id: "123",
-            username: "imf",
-            email: "test@rollbar.com"
-        },
-        server: {
-            host: "web11",
-            root: "http://localhost:8443/DemoJSTest/JSDemo/",
-            region: "aws-us-east-2"
-        },
-        custom: {
-            bankTransactionId: "46456456456"
-        }*/
-    }-
-
--->
-
-<!-- add RB snippet here--->
 
 
-<script>
-
-/*
-function getMessage(input) {
-  
-  alert('Hello ' +input);
-}
-*/
+<script src="script.js"></script>
 
 
-function FirstName() {
-
-  var input = prompt('Enter your First Name');
-  getMessage(input);
-  
-}
-        
-function LastName() {
-
-  var input = prompt('Enter your Last Name');
-  getMessage(input);
-  
-}
-
-
-function validateDate() {
-  
-  var input = prompt('Enter your Date of Birth: mm-dd-yyyy');
-
-var myregex =/^([0-9]{2})-([0-9]{2})-([0-9]{4})$/; // && input !=== null
-
-if(myregex.test(input) && input !==="")
-{
-     alert('Valid birthdate: ' +input);
-     
-} else {
-
-  alert('Invalid birthdate: ' +input);
-  throw new Error('Invalid birthdate: ' +input)
- 
-       }
-       
-}
-
-</script>
 </head>
 <!--<meta http-equiv="cache-control" content="no-cache" /> -->
 <body>
+
+
+<form>
+  <label for="dob">Date of Birth mm-dd-yyyy:</label><br>
+  <input type="text" id="dob" name="dob"><br>
+</form>
+<button onclick="validateDate();">Submit</button>
+
+
 <h1>Rollbar JavaScript Demo</h1>
 <button onclick="FirstName();">FirstName</button>
-<button onclick="LastName();">FirstName</button>
-<button onclick="validateDate();">Birthdate</button>
+<button onclick="LastName();">LastName</button>
 </body>
 </html>
 
