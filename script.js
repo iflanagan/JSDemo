@@ -1,9 +1,4 @@
 
-
-
-<!--Ian Flanagan Rollbar 2020 ----->
-
-
 /*
 payload: {
 
@@ -27,7 +22,7 @@ payload: {
 
     */
 
-<!-- add RB snippet here--->
+// add Rollbar Snipet here
 
 /*
 function getMessage(input) {
