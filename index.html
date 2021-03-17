@@ -1,26 +1,29 @@
 <html>
+
 <head>
 
 
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 
 </head>
 <!--<meta http-equiv="cache-control" content="no-cache" /> -->
+
 <body>
 
+  <form>
+    <label for="dob">Date of Birth mm-dd-yyyy:</label><br>
+    <input type="text" id="dob" name="dob"><br>
+  </form>
+  <button onclick="validateDate();">Submit</button>
 
-<form>
-  <label for="dob">Date of Birth mm-dd-yyyy:</label><br>
-  <input type="text" id="dob" name="dob"><br>
-</form>
-<button onclick="validateDate();">Submit</button>
 
-
-<h1>Rollbar JavaScript Demo</h1>
-<button onclick="FirstName();">FirstName</button>
-<button onclick="LastName();">LastName</button>
+  <h1>Rollbar JavaScript Demo</h1>
+  <button onclick="FirstName();">FirstName</button>
+  <button onclick="LastName();">LastName</button>
+  <button onclick="GenerateRandomErrors();">GenerateRandomErrors</button>
+  <button onclick="GenerateInfo();">Generateinfomsg</button>
 </body>
-</html>
 
+</html>
