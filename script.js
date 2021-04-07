@@ -151,7 +151,7 @@ function validateDate() {
   } else {
 
     alert('Invalid birthdate: user entered ' + input + ' use the following format: mm-dd-yyyy');
-    throw new Error('Invalid birthdate: ' + input)
+    throw new Error('Invalid birthdate please enter a valid birthdate mm-dd-yyyy: ' + input)
 
   }
 
