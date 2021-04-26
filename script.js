@@ -10,15 +10,16 @@ let version = stringGen(10);
 
 var _rollbarConfig = {
 
-  accessToken: "c5ed2df35ce543d9af10f98e4c39343c",
+  accessToken: "",
   captureUncaught: true,
   captureUnhandledRejections: true,
-  code_version: 1.1,
+  code_version: 1.2,
   verbose: true,
   onSendCallback: true,
 
   payload: {
-    environment: myEnv,
+    //environment: myEnv,
+    environment: "prod",
 
     person: {
       id: token,
@@ -146,11 +147,13 @@ function validateDate() {
   var input = document.getElementById('dob').value;
 
   if (myregex.test(input)) {
-    alert('Valid birthdate: ' + input);
+    //alert('Valid birthdate: ' + input);
+    console.log('Valid birthdate: ' + input);
 
   } else {
 
-    alert('Invalid birthdate: user entered ' + input + ' use the following format: mm-dd-yyyy');
+    //alert('Invalid birthdate: user entered ' + input + ' use the following format: mm-dd-yyyy');
+    console.log('Invalid birthdate: user entered ' + input + ' use the following format: mm-dd-yyyy');
     throw new Error('Invalid birthdate please enter a valid birthdate mm-dd-yyyy: ' + input)
 
   }
