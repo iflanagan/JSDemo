@@ -44,15 +44,6 @@ var _rollbarConfig = {
 
 // End Rollbar Snippet
 
-
-/*
-function getMessage(input) {
-  
-  alert('Hello ' +input);
-}
-
-*/
-
 function getRandomEnv() {
 
   let myEnvironments = ["prod", "QA", "DEV", "UAT", "Staging"];
@@ -115,6 +106,14 @@ function GenerateCriticalErrors() {
   Rollbar.critical(`Critical Error in rollbar now from clicking GenerateCriticalErrors button`)
 
 }
+
+/*
+function getMessage(input) {
+  
+  alert('Hello ' +input);
+}
+
+*/
 
 function sayHello() {
   var message = getMessage('hello');
