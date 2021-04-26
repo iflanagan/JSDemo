@@ -10,10 +10,10 @@ let version = stringGen(10);
 
 var _rollbarConfig = {
 
-  accessToken: "",
+  accessToken: "3127546935ad432abb0fb9d4a828e6b3",
   captureUncaught: true,
   captureUnhandledRejections: true,
-  code_version: 1.2,
+  code_version: version,
   verbose: true,
   onSendCallback: true,
 
@@ -105,7 +105,7 @@ function GenerateRandomErrors() {
 
   console.log('Generating a random error');
   let myString = stringGen(10);
-  Rollbar.error(`Random error in rollbar now from clicking GenerateRandomErrors button`)
+  Rollbar.error(`${myString} Random error in rollbar now from clicking GenerateRandomErrors button`)
 
 }
 
