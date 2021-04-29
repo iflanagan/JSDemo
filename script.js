@@ -10,6 +10,7 @@ let version = stringGen(10);
 
 var _rollbarConfig = {
 
+  // my token
   accessToken: "3127546935ad432abb0fb9d4a828e6b3",
   captureUncaught: true,
   captureUnhandledRejections: true,
@@ -138,7 +139,6 @@ function LastName() {
   getMessage(input);
 
 }
-
 
 function validateDate() {
 
