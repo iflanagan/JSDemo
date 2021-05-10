@@ -11,7 +11,7 @@ let version = stringGen(10);
 var _rollbarConfig = {
 
   // my token
-  accessToken: "3127546935ad432abb0fb9d4a828e6b3",
+  accessToken: "63c976996c5d4e26b7e13b2db5b1e4b8",
   captureUncaught: true,
   captureUnhandledRejections: true,
   code_version: version,
