@@ -18,9 +18,10 @@ var _rollbarConfig = {
   verbose: true,
   onSendCallback: true,
 
+
   payload: {
-    //environment: myEnv,
-    environment: "prod",
+    environment: myEnv,
+    //environment: "prod",
 
     person: {
       id: token,
@@ -115,6 +116,8 @@ function getMessage(input) {
 }
 
 */
+
+// test 
 
 function sayHello() {
   var message = getMessage('hello');
