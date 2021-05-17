@@ -11,7 +11,7 @@ let version = stringGen(10);
 var _rollbarConfig = {
 
   // my token
-  accessToken: "63c976996c5d4e26b7e13b2db5b1e4b8",
+  accessToken: "0e9dad95026e469f93921c0530b535ae",
   captureUncaught: true,
   captureUnhandledRejections: true,
   code_version: version,
@@ -143,6 +143,17 @@ function LastName() {
 
 }
 
+function infraError() {
+
+  let value = 'true';
+
+  if (value) {
+
+    throw new Error('domain not found: not found');
+
+  }
+}
+
 function validateDate() {
 
   var myregex = /^([0-9]{2})-([0-9]{2})-([0-9]{4})$/; // && input !== null
@@ -156,7 +167,7 @@ function validateDate() {
 
     //alert('Invalid birthdate: user entered ' + input + ' use the following format: mm-dd-yyyy');
     console.log('Invalid birthdate: user entered ' + input + ' use the following format: mm-dd-yyyy');
-    throw new Error('Invalid birthdate please enter a valid birthdate mm-dd-yyyy: ' + input)
+    throw new Error('Invalid birthdate please enter a valid birthdate mm-dd-yyyy: ' + input);
 
   }
 
