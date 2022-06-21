@@ -3,9 +3,9 @@
 <head>
 
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js">
+  </script>
   <script src="script.js"></script>
-
 
 </head>
 <!--<meta http-equiv="cache-control" content="no-cache" /> -->
@@ -17,15 +17,74 @@
   </form>
   <button onclick="validateDate();">Submit</button>
 
+  <!--onclick="window.open('URL')" example-->
+  <h1>Testim JavaScript Demo</h1>
+  <p id="demo"></p>
 
-  <h1>Rollbar JavaScript Demo</h1>
+  <script>
+
+    //document.addEventListener("click", function () {
+     // document.getElementById("demo").innerHTML = "We Love Testim.io!";
+   // });
+  </script>
+  
+  <input type="button" onClick="myPopup()" value="popup">
+  <button id="promise" onclick="promiseFail()">FailPromise</button>
+  <button id="cookie" onclick="createCookie()">CreateCookie</button>
+  </button>
+  <button id="clickMe" onclick="clickButton()">ClickmeBUtton</button>
+  <button onclick="OpenTab()">OpenNewTab</button>
+  <button onclick="FirstName();">FirstName</button>
   <button onclick="FirstName();">FirstName</button>
   <button onclick="LastName();">LastName</button>
-  <button onclick="GenerateRandomErrors();">GenerateRandomErrors</button>
-  <button onclick="GenerateDebug();">GenerateDebugmsg</button>
-  <button onclick="GenerateInfo();">Generateinfomsg</button>
-  <button onclick="GenerateCriticalErrors();">GenerateCriticalErrors</button>
-  <button onclick="infraError();">InfraError</button>
+  <button onclick="download()">DownloadFile</button>
+  <button onclick="saveStaticDataToFile()">CreateFile</button>
+  <button onclick="ianexample()">ArrayExample</button>
+  <button onclick="GenerateRandomNumber();">GenerateRandomNumber</button>
+  <a href="test.txt" download>DownLoadFile</a>
+  <a href="myFiles.zip" download>DownLoadZipFile</a>
+
+  <input id="go" type="button" value="Open new window"
+    onclick="window.open('/javascript/examples/sample_popup.cfm','popUpWindow','height=500, width=400, left=100, top=100, resizable=yes, scrollbars=yes, toolbar=yes, menubar=no, location=no, directories=no, status=yes');">
+
+
+  <a href="https://www.quackit.com/javascript/examples/sample_popup.cfm"
+    onclick="basicPopup(this.href);return false">Open a popup window</a>
+
+
+  <p>Click on the "Choose File" button to upload a file:</p>
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+
+  <label class="container">checkboxExample
+    <input type="checkbox" unchecked="checked">
+    <span class="checkmark"></span>
+  </label>
+
+  <form>
+      <input type="radio" id="html" name="fav_language" value="myradiobutton">
+      <label for="html">myradiobutton</label><br>
+  </form>
+
+
 </body>
+
+<table border = "1">
+  <tr>
+     <th>enable</th>
+     <th>name</th>
+     <th>age</th>
+  </tr>
+  <tr>
+    <td><input type="checkbox" /></td>
+     <td><a href="http://localhost:5432/JSDemoApp/JSDemo/index.html" onclick="return confirm_alert(this);">Shasta Flanagan</a></td>
+     <td>25</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" /></td>
+     <td><a href="http://localhost:5432/JSDemoApp/JSDemo/index.html" onclick="return confirm_alert_RF(this);">Royal Flanagan</a></td>
+     <td>14</td>
+  </tr>
+</table>
 
 </html>
