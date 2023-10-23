@@ -15,6 +15,6 @@ Pre-requisites
 
 7. docker build -t my-web-app
 
-8. docker run -p 8443:8080 my-web-app
+8. docker run -p 8443:8080 my-web-app .
 
 9. open a web browser locally and see if you can navigate to http://localhost:8443/JSDemo/index.html
