@@ -1,27 +1,23 @@
-# Use an official Node.js runtime as the base image
-FROM node:18
+# Use official Node.js image
+FROM node:23
 
-# Set the working directory inside the container
+# Set working directory
 WORKDIR /app
 
-# Copy the package.json from your host into the container at /app
-COPY package.json /app/
+# Copy package.json first (for caching)
+COPY package.json ./
 
-# Install `git` to clone your repository
-RUN apt-get update && apt-get install -y git
-
-# Clone your app repository (replace with your Git repository URL)
-RUN git clone https://github.com/iflanagan/JSDemo.git
-
-# Install project dependencies (if using npm)
+# Install dependencies (if any)
 RUN npm install
 
-# Install `live-server` globally
+# Install live-server globally
 RUN npm install -g live-server
 
-# Expose the port that live-server will use (default is 8080)
-EXPOSE 8443
+# Copy ALL project files into the container
+COPY . .
 
-# Start your Node.js app server using `live-server`
-CMD ["live-server"]
+# Expose port 80
+EXPOSE 80
 
+# Run live-server on port 80
+CMD ["live-server", "--port=80", "--host=0.0.0.0"]

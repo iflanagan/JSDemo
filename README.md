@@ -1,14 +1,11 @@
 
 clone repo
 
-install python 2.7 or greater 
+#build the image 
+docker build -t jsdemo .
 
-open a terminal window
+#run the image 
+docker run -d -p 80:80 --name jsdemo-container jsdemo
 
-run python -m SimpleHTTPServer 8443
-
-open a browser and navigate to http://localhost:8443
-
-you may need to provide the path to the file index.html
 
 
